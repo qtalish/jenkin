@@ -18,16 +18,6 @@ emailext body: readFile("jenkins-mail.html"), mimeType: 'text/html', recipientPr
             
 	}
          
-}
-      
-      stage('Confirm Stage') {
-
-         steps {
-
-            echo 'done'
-         
-        }
-      
      }
 
   }
