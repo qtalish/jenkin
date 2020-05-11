@@ -14,7 +14,7 @@ stages {
          steps {
 
             echo 'email'
-emailext body: readFile("target/jenkins-mail.html"), mimeType: 'text/html', recipientProviders: [developers()], subject: 'Jenkins Mail Doc ', to: 'talish.kazi@neebal.com'       
+emailext body: readFile("jenkins-mail.html"), mimeType: 'text/html', recipientProviders: [developers()], subject: 'Jenkins Mail Doc ', to: 'talish.kazi@neebal.com'       
             
 	}
          
